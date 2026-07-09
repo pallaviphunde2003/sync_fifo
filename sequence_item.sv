@@ -1,0 +1,20 @@
+
+`include "uvm_macros.svh"
+
+class fifo_seq_item extends uvm_sequence_item;
+    `uvm_object_utils(fifo_seq_item)
+
+  //data and control signals in trasaction packet
+  rand bit [7:0]data_in;
+  rand bit rd;
+  rand bit wr;
+  bit full;
+  bit empty;
+  bit [7:0]data_out;
+  
+  //Constructor
+  function new(string name="fifo_seq_item");
+    super.new(name);
+  endfunction
+  
+endclass
