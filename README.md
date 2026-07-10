@@ -1,11 +1,11 @@
 # UVM-Based Synchronous FIFO Verification Environment
 
-## Overview
+**Overview**
 
-This project implements a parameterized **Synchronous FIFO** in SystemVerilog along with a **Universal Verification Methodology (UVM)** based verification environment. The objective is to verify the FIFO functionality under various operating conditions using a reusable, scalable, and modular UVM testbench.
----
+This project implements a parameterized **Synchronous FIFO** in SystemVerilog along with a universal Verification Methodology (UVM) based verification environment. The objective is to verify the FIFO functionality under various operating conditions using a reusable, scalable, and modular UVM testbench.
 
-## Features
+
+**Features**
 
 - Parameterized Synchronous FIFO RTL
 - Configurable FIFO Depth and Data Width
@@ -18,7 +18,7 @@ This project implements a parameterized **Synchronous FIFO** in SystemVerilog al
 
 ---
 
-## FIFO Features
+**FIFO Features**
 
 - Single Clock (Synchronous FIFO)
 - Parameterized FIFO Depth
@@ -31,7 +31,7 @@ This project implements a parameterized **Synchronous FIFO** in SystemVerilog al
 
 ---
 
-## UVM Verification Architecture
+**UVM Verification Architecture**
 
 The verification environment consists of the following components:
 
@@ -49,7 +49,7 @@ The monitor captures DUT transactions and forwards them to the scoreboard throug
 
 ---
 
-## Test Cases
+**Test Cases**
 
 The following verification scenarios are implemented:
 
@@ -66,7 +66,7 @@ The following verification scenarios are implemented:
 
 ---
 
-## Project Structure
+**Project Structure**
 
 ```
 sync_fifo/
@@ -92,7 +92,7 @@ sync_fifo/
 
 ---
 
-## Verification Flow
+**Verification Flow**
 
 1. Generate FIFO transactions using UVM sequences.
 2. Driver applies transactions to the DUT.
@@ -103,7 +103,7 @@ sync_fifo/
 
 ---
 
-## Parameterization
+**Parameterization**
 
 The FIFO is fully parameterized.
 
@@ -116,7 +116,7 @@ Changing these parameters automatically updates the RTL and verification environ
 
 ---
 
-## Tools Used
+**Tools Used**
 
 - SystemVerilog
 - Universal Verification Methodology (UVM)
