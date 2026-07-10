@@ -1,5 +1,11 @@
-`include "uvm_macros.svh"
+ `include "uvm_macros.svh"
 import uvm_pkg::*;
+
+// FIFO parameters
+`ifndef DATA_WIDTH
+`define DATA_WIDTH 8
+`endif
+
 
 `include "sequence_item.sv"
 `include "sequencer.sv"
@@ -9,6 +15,7 @@ import uvm_pkg::*;
 `include "monitor.sv"
 `include "agent.sv"
 `include "scoreboard.sv"
+`include "coverage.sv"   
 `include "env.sv"
 `include "test.sv"
 `include "wr_test.sv"
